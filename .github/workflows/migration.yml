@@ -27,7 +27,7 @@ jobs:
 
       - uses: joshuaavalon/flyway-action@v2
         with:
-          url: jdbc:mysql://192.168.100.220:3306/lapis
-          user: user
-          password: password
+          url: jdbc:mysql://${{ secrets.DB_HOST }}:3306/${{ secrets.DB_DATABASE }}
+          user: ${{ secrets.DB_USER }}
+          password: ${{ secrets.DB_PASSWORD }}
       - run: echo 'testing'
