@@ -11,5 +11,5 @@ CREATE TABLE LapisCodes (
 	Region int NOT NULL,
 	User int NOT NULL,
 	Lapis int NOT NULL,
-	PRIMARY KEY (Id)
+	PRIMARY KEY (LapisId)
 );
