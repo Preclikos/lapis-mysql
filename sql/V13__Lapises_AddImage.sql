@@ -1,2 +1,2 @@
 ALTER TABLE Lapises    
-ADD COLUMN ImageId int
+ADD COLUMN ImageId int NOT NULL
